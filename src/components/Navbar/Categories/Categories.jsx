@@ -4,7 +4,7 @@ export const Categories = () => {
         <>
             <ul className="navbar-nav me-auto">
                 <li className="nav-item">
-                    <a className="nav-link active" href="#">Home
+                    <a className="nav-link" href="#">Home
                         <span className="visually-hidden">(current)</span>
                     </a>
                 </li>
