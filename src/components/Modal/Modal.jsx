@@ -6,7 +6,9 @@ import Modal_card from './Modal_card';
 const Modal = () => {
 
     return(
-       <div></div>
+       <div>
+            <Modal_container/>
+       </div>
     );
 }
 

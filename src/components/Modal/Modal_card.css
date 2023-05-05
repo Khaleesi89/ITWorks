@@ -1,0 +1,25 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'titulo';
+    src: url(../public/fonts/Kerox-NonCommercial.otf) format('opentype');
+}
+
+.card_container{
+    height: 200px;
+    width: 150px;
+    background-color: #6F42C1;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.card_container_image{
+    border-radius: 15px;
+    height: 60%;
+    width: 100%;
+}
+
+.card_container_body{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
