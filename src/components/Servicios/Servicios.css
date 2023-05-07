@@ -1,0 +1,84 @@
+body{
+    background: radial-gradient(rgb(117, 91, 167));
+}
+
+.card {
+    width: 21rem;
+    
+}
+
+.card:hover {
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important
+}
+
+.card-body{
+    padding: 3rem 0 !important;
+    
+}
+
+.card-text{
+font-size: 0.9rem;
+padding: 0.4rem 1.9rem;
+}
+
+.container-fluid .row {
+    padding-top: 6rem;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 21rem;
+    height: 15rem;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+
+.card-img-top:hover {
+transform: scale(1.1);
+}
+
+.list-group-item{
+    margin: 5px;
+}
+
+.btn {
+ margin-top: 20px;
+}
+
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES)==============*/
+
+@media screen and (max-width: 1024px) {
+    .card {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .card-body {
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ============== MEDIA QUERIES (SMALL DEVICES)==============*/
+
+@media screen and (max-width: 600px) {
+    .card {
+      grid-template-columns: 0.5fr;
+      gap: 1.5rem;
+    }
+   
+}
+
+
+
