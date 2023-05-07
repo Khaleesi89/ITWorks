@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(../public/fonts/Kerox-NonCommercial.otf) format('opentype');
+}
+
+.Modal_container{
+    height: 230px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Modal_cards{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}

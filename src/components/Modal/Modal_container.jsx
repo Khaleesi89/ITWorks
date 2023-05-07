@@ -1,5 +1,7 @@
 import React from 'react';
 import Modal_card from './Modal_card';
+import './Modal_card.css';
+import './Modal_container.css'
 
 const Modal_container = () => {
 
@@ -8,22 +10,22 @@ const Modal_container = () => {
         {
             id: 1,
             title: "In-company",
-            description: ""
+            description: "nuestros planes para compañias, garantizan la mejor eficiencia para la oferta de sus servicios. Tienes una duda? no dudes en consultarnos!"
         },
         {
             id: 2,
             title: "Academy",
-            description: ""
+            description: "potenciá a tu organizacion con los skills del mañana. Aprendé con nosotros!"
         },
         {
             id: 3,
-            title: "e-gov",
-            description: ""
+            title: "Start-up program",
+            description: "capacitaciones sin costo para compañias emergentes."
         },
         {
             id: 4,
-            title: "Educacion primero",
-            description: ""
+            title: "Education",
+            description: "planes exclusivos para instituciones educativas."
         }
 
     ];

@@ -1,0 +1,103 @@
+:root{
+    --color-primary:rgb(84, 59, 134);
+    --color-bg: rgb(255, 255, 255);
+}
+
+
+.oferta{
+    background: var(--color-bg-primary);
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid var(--color-primary);
+    height: fit-content;
+    transition: var(--transition);
+}
+
+.oferta:hover {
+    background: transparent;
+    border-color:rgb(117, 91, 167);
+    cursor: default;
+}
+
+
+
+
+
+
+.ofertas__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.7rem;
+}
+
+
+.oferta__head{
+    background: var(--color-primary);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
+}
+
+.oferta__head h3 {
+    color: var(--color-bg);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.oferta_list{
+    padding: 2rem;
+}
+
+.oferta_list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;    
+}
+
+.oferta__list-icon{
+color: var(--color-bg) ;
+margin-top: 2px;
+}
+
+.oferta__list-icon ,p {
+    font-size: 0.9rem;
+    color: var(--color-bg) ;
+}
+.ofertas h2, h5{
+    color: var(--color-bg);
+    text-align: center;
+    padding: 20px 10px;
+    margin: 15px;
+  
+}
+
+.btn {
+    margin: 1rem;
+    font-size: 20px;
+   
+
+}
+
+
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES)==============*/
+
+@media screen and (max-width: 1024px) {
+    .ofertas__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .oferta {
+        height: auto;
+    }
+}
+
+
+
+/* ============== MEDIA QUERIES (SMALL DEVICES)==============*/
+
+@media screen and (max-width: 600px) {
+    .ofertas__container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+}
