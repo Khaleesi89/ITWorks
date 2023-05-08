@@ -2,6 +2,11 @@ import './App.css'
 import { Navbar } from './components/Navbar/Navbar';
 import { Promotions } from './components/Promotions/Promotions';
 import {Home} from './components/Home/Home';
+import Cards from './components/Servicios/Cards';
+import Ofertas from './components/Servicios/Ofertas';
+
+
+
 function App() {
   
     return(
@@ -9,10 +14,9 @@ function App() {
             <Promotions/>
             <Navbar />
             <Home/>
-            
-        
-            
-            
+            <Cards />
+            <Ofertas />    
+             
         </div>
     )
 

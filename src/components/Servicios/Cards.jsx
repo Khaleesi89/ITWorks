@@ -1,9 +1,10 @@
-import React, {Component} from 'react'
-import Card from './Card' 
-import DiseñoUXUI from "../assets/UX-UI.jpg"
-import CommunityManager from "../assets/communitymanager.png"
-import DesarrolloWeb from "../assets/Desarrolloweb.png"
-import DiseñoGrafico from "../assets/DiseñoGrafico.png"
+
+import React, {Component} from 'react';
+import Card from './Card'; 
+import DiseñoUXUI from "../assets/UX-UI.jpg";
+import CommunityManager from "../assets/communitymanager.png";
+import DesarrolloWeb from "../assets/Desarrolloweb.png";
+import DiseñoGrafico from "../assets/DiseñoGrafico.png";
 
 class Cards extends Component {
     render() {
