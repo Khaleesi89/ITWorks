@@ -6,6 +6,7 @@ import Cards from './components/Servicios/Cards';
 import Ofertas from './components/Servicios/Ofertas';
 
 
+
 function App() {
   
     return(
@@ -14,10 +15,8 @@ function App() {
             <Navbar />
             <Home/>
             <Cards />
-            <Ofertas />
-        
-            
-            
+            <Ofertas />    
+             
         </div>
     )
 
