@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {Modal_card} from './Modal_card';
 import './Modal_card.css';
 import './Modal_container.css'

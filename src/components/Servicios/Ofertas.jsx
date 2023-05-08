@@ -1,4 +1,4 @@
-import React from "react";
+
 import './Ofertas.css';
 import {BsCheckCircle} from 'react-icons/bs';
 
