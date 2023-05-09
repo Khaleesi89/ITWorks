@@ -4,6 +4,7 @@ import { Promotions } from './components/Promotions/Promotions';
 import {Home} from './components/Home/Home';
 import Cards from './components/Servicios/Cards';
 import Ofertas from './components/Servicios/Ofertas';
+import Carrousel from './components/Carrousel/Carrousel';
 
 
 
@@ -15,8 +16,8 @@ function App() {
             <Navbar />
             <Home/>
             <Cards />
-            <Ofertas />    
-             
+            <Ofertas />
+            <Carrousel />
         </div>
     )
 
