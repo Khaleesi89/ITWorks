@@ -9,10 +9,12 @@ import Footer from '../src/components/Footer/Footer';
 
 
 
+
 function App() {
   
     return(
         <div>
+            
             <Promotions/>
             <Navbar />
             <Home/>

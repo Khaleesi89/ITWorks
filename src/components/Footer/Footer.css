@@ -1,5 +1,4 @@
 
-
 .footer{
     background-color: #6F42C1;
 }
@@ -36,12 +35,10 @@ a{
 .socialmedia{
     display: flex;
     flex-direction: row;
-
 }
 
 .socialmedia img{
     width: 70%;
-
 }
 
 .sb_footer-links_div h4{
@@ -79,7 +76,7 @@ a{
     font-weight: 600;
 }
 hr{
-    border-color: #26E7C8 !important;
+    border-color: #190832 !important;
      width: 100%;
       
 }

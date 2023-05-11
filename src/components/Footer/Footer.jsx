@@ -1,6 +1,9 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../../img/logo.png';
+import fb from '../assets/facebook2.png'
+import insta from '../assets/instagram2.png'
+import whatsapp from '../assets/whatsapp.png'
 
 
 const Footer=()=>{
@@ -49,9 +52,9 @@ const Footer=()=>{
                             <h4>Seguinos en redes</h4>
                             <div className='socialmedia'>
                                 
-                                <p><img src='{fb}' alt=""/></p>
-                                <p><img src='{insta}' alt="" /></p>
-                                <p><img src='{whats}' alt="" /></p>
+                                <p><img src={fb} alt=""/></p>
+                                <p><img src={insta} alt="" /></p>
+                                <p><img src={whatsapp} alt="" /></p>
                                 <p><img src='{ddd}' alt="" /></p>
                             </div>
                         </div>
