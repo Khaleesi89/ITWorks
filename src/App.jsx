@@ -20,9 +20,8 @@ function App() {
             <Home/>
             <Cards />
             <Ofertas /> 
-            <Footer/>
-            <Ofertas />
             <Carrousel />
+            <Footer/>
 
         </div>
     )
