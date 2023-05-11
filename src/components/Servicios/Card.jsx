@@ -3,6 +3,7 @@ import './Servicios.css';
 
 const Card = props => {
     return(
+
            <> 
 
             <div className="card border-primary mb-3">
@@ -26,8 +27,9 @@ const Card = props => {
                     </div>
                 </div>
             </div>  
+
    
-</>
+        </>
     );
 }
 
