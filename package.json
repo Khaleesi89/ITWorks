@@ -9,15 +9,19 @@
     "preview": "vite preview",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "startJson":"json-server --watch services.json --port 3001"
+
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "^5.0.1",
     "swiper": "^9.3.0"
   },
@@ -25,6 +29,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "json-server": "^0.17.3",
     "vite": "^4.2.0"
   }
 }

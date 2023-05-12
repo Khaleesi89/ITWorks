@@ -9,11 +9,11 @@ import data from '../../img/data.jpg';
 const Footer=()=>{
     return (
         <div className='footer'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#190832" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,138.7C640,149,800,203,960,213.3C1120,224,1280,192,1360,176L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#190832" fillOpacity="1" d="M0,192L80,176C160,160,320,128,480,138.7C640,149,800,203,960,213.3C1120,224,1280,192,1360,176L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
                 <div className='sb_footer section_padding'>
                     <div className='sb_footer-links'>
                         <div className='dataFiscal'>
-                            <img src={data} alt="data fiscal" srcset="" />
+                            <img src={data} alt="data fiscal"/>
                         </div>
                         <div className='textitoFooter'>
                             <p>ITWorks está presente en Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Honduras, México, Nicaragua, Panamá, Paraguay, Perú, Puerto Rico, República Dominicana, Estados Unidos, Uruguay</p>
