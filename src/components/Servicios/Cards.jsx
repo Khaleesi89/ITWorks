@@ -1,15 +1,15 @@
 
-import React, {Component} from 'react';
+//import React, {Component} from 'react';
 import Card from './Card'; 
 import DiseñoUXUI from "../assets/UX-UI.jpg";
 import CommunityManager from "../assets/communitymanager.png";
 import DesarrolloWeb from "../assets/Desarrolloweb.png";
 import DiseñoGrafico from "../assets/DiseñoGrafico.png";
 
-class Cards extends Component {
-    render() {
-        return (
-          
+
+
+export const Cards = ()=>{
+    return (
         <div className="container-fluid d-flex justify-content-center">
             <div className="row">
                 <div className="col-md-3">
@@ -49,9 +49,5 @@ class Cards extends Component {
                 </div>
             </div>
         </div>
-
-            )
-    }
+    )
 }
-
-export default Cards;
