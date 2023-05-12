@@ -5,6 +5,17 @@ import DiseñoUXUI from "../assets/UX-UI.jpg";
 import CommunityManager from "../assets/communitymanager.png";
 import DesarrolloWeb from "../assets/Desarrolloweb.png";
 import DiseñoGrafico from "../assets/DiseñoGrafico.png";
+import axios from 'axios';
+
+axios.get('http://localhost:3001/services')
+  .then(response => {
+    // Manejar la respuesta de la solicitud
+    console.log(response.data);
+  })
+  .catch(error => {
+    // Manejar el error de la solicitud
+    console.error(error);
+  });
 
 
 
