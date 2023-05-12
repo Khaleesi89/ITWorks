@@ -3,7 +3,7 @@ export const Promotions = () => {
     return(
         <div className="encabezado">
             <div className="texto">
-                <p>Envíos Gratuitos desde $10000. Un Voucher de regalo a partir de los $25000!!!</p>
+                <p>Con la creación de tu página web, te hacemos un 15% descuento en el primer mes de mantenimiento !!!</p>
             </div>
             <div className="cerrar">
                 <i class="bi bi-x-lg"></i>
