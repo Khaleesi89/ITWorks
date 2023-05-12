@@ -4,8 +4,8 @@ import { Promotions } from './components/Promotions/Promotions';
 import {Home} from './components/Home/Home';
 import Cards from './components/Servicios/Cards';
 import Ofertas from './components/Servicios/Ofertas';
-import Footer from '../src/components/Footer/Footer';
 import Carrousel from './components/Carrousel/Carrousel';
+import Footer from '../src/components/Footer/Footer';
 
 
 

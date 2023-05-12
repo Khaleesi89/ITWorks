@@ -8,8 +8,8 @@ const Ofertas = () => {
     return ( 
 
         <section className="ofertas" id= 'ofertas' >
-            <h5>Ofertas especiales</h5>
-            <h2>Ofertas</h2>
+            
+            <h2>Ofertas especiales</h2>
 
             <div className="container ofertas__container">
                 <article className="oferta">
