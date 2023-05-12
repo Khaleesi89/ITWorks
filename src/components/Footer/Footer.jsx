@@ -1,9 +1,9 @@
-import React from 'react';
+
 import './Footer.css';
-import logo from '../../img/logo.png';
 import fb from '../assets/facebook2.png'
 import insta from '../assets/instagram2.png'
 import whatsapp from '../assets/whatsapp.png'
+import data from '../../img/data.jpg';
 
 
 const Footer=()=>{
@@ -12,11 +12,15 @@ const Footer=()=>{
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#190832" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,138.7C640,149,800,203,960,213.3C1120,224,1280,192,1360,176L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
                 <div className='sb_footer section_padding'>
                     <div className='sb_footer-links'>
-                    <div className='logo'>
-                        <img src={logo} alt="logo"/>
-                    </div>
+                        <div className='dataFiscal'>
+                            <img src={data} alt="data fiscal" srcset="" />
+                        </div>
+                        <div className='textitoFooter'>
+                            <p>ITWorks está presente en Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Honduras, México, Nicaragua, Panamá, Paraguay, Perú, Puerto Rico, República Dominicana, Estados Unidos, Uruguay</p>
+
+                        </div>
                         <div className='sb_footer-links_div'>
-                            <h4>Conocenos</h4>
+                            <h4>Conócenos</h4>
                             <a href="/emplayer">
                                 <p>Nuestros compromisos</p>
                             </a>
@@ -58,7 +62,9 @@ const Footer=()=>{
                                 <p><img src='{ddd}' alt="" /></p>
                             </div>
                         </div>
+                        
                     </div>
+                </div>
             <hr />
             <div className='sb_footer-below'>
                 <div className='sb_footer-copyright'>
@@ -67,13 +73,12 @@ const Footer=()=>{
                     </p>
                 </div>
                 <div className='sb_footer-below-links'>
-                    <a href="/terms"><div><p>Terminos & Condiciones</p></div></a>
-                    <a href="/terms"><div><p>Politica de Privacidad</p></div></a>
-                    <a href="/terms"><div><p>Defensa al consumidor</p></div></a>
-                    <a href="/terms"><div><p>Contacto</p></div></a>
+                    <a href="/terms"><p>Terminos & Condiciones</p></a>
+                    <a href="/terms"><p>Politica de Privacidad</p></a>
+                    <a href="/terms"><p>Defensa al consumidor</p></a>
+                    <a href="/terms"><p>Contacto</p></a>
                 </div>
             </div>
-                </div>  
         </div>
     )
 }
