@@ -3,6 +3,20 @@
     background-color: #6F42C1;
 }
 
+.dataFiscal>img{
+    margin-left: 30px;
+    width: 100px;
+}
+
+.textitoFooter{
+    width: 200px;
+    
+    
+}
+.textitoFooter>p{
+    color: #BFACE4;
+}
+
 .sb_footer{
     display: flex;
     flex-direction: column;
@@ -32,13 +46,19 @@ a{
     text-decoration: none;
 }
 
+
 .socialmedia{
     display: flex;
     flex-direction: row;
+    width: 150px;
 }
 
 .socialmedia img{
     width: 70%;
+}
+
+.socialmedia img:hover{
+    transform: scale(1.2);
 }
 
 .sb_footer-links_div h4{
@@ -66,7 +86,15 @@ a{
 .sb_footer-below-links{
     display: flex;
     flex-direction: row;
+    
 }
+
+.sb_footer-below-links>a{
+    border-left: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
 
 .sb_footer-below-links p{
     font-size: 13px;
