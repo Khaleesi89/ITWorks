@@ -41,7 +41,7 @@ const Ofertas = () => {
                     
 
                     </ul>
-                    <button type="button" class="btn btn-dark">$15.000</button>
+                    <button type="button" className="btn btn-dark">$15.000</button>
                 </article>
 
                     {/* End of ux/ui */}
@@ -76,7 +76,7 @@ const Ofertas = () => {
                         </li>
 
                     </ul>
-                    <button type="button" class="btn btn-dark">$22.500</button>
+                    <button type="button" className="btn btn-dark">$22.500</button>
                 </article>
 
                     {/* End of Community Manager*/}
@@ -110,7 +110,7 @@ const Ofertas = () => {
                         </li>
 
                     </ul>
-                    <button type="button" class="btn btn-dark">$25.000</button>
+                    <button type="button" className="btn btn-dark">$25.000</button>
                 </article>
 
                     {/* End of Desarrollo Web */}
@@ -143,7 +143,7 @@ const Ofertas = () => {
                         </li>
                     
                     </ul>
-                    <button type="button" class="btn btn-dark">$12.000</button>
+                    <button type="button" className="btn btn-dark">$12.000</button>
                 </article>
             </div>
 
