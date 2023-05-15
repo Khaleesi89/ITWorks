@@ -8,8 +8,6 @@ import Carrousel from './components/Carrousel/Carrousel';
 import Footer from '../src/components/Footer/Footer';
 
 
-
-
 function App() {
   
     return(
