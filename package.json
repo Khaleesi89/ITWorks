@@ -10,8 +10,7 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "startJson":"json-server --watch services.json --port 3001"
-
+    "startJson": "json-server --watch services.json --port 3001"
   },
   "dependencies": {
     "axios": "^1.4.0",
