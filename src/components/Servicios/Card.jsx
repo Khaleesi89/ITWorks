@@ -17,7 +17,7 @@ const Card = props => {
                             {props.text}
                         </p>
                         <a href="#" className="btn btn-outline-primary">
-                            {props.button}
+                            Saber más
                         </a>
                     </div>
                 </div>
