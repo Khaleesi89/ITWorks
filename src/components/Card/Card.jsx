@@ -1,5 +1,6 @@
-
-import './Servicios.css';
+/* import './Servicios.css'; */
+import '../Cards/Servicios.css'; 
+i
 
 const Card = props => {
     return(
@@ -17,7 +18,7 @@ const Card = props => {
                             {props.text}
                         </p>
                         <a href="#" className="btn btn-outline-primary">
-                            {props.button}
+                            Saber más
                         </a>
                     </div>
                 </div>
