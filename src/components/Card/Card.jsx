@@ -1,6 +1,6 @@
 /* import './Servicios.css'; */
 import '../Cards/Servicios.css'; 
-i
+
 
 const Card = props => {
     return(
