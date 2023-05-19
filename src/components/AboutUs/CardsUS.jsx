@@ -48,8 +48,9 @@ const cards = [
 
 const CardsUS = () => {
   return (
+    <>
+    <h2>Quienes somos</h2>
     <div className='container d-flex justify-content-center h-100 align-items-center'>
-        {/* <h2>Quienes somos</h2> */}
         <div className="row">
             {
                 cards.map(card => (
@@ -64,6 +65,7 @@ const CardsUS = () => {
             }
         </div>
     </div>
+    </>
   )
 }
 

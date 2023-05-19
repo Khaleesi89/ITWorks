@@ -18,8 +18,8 @@ function App() {
             <Navbar />
             <Home/>
             <Cards />
-            <CardsUS />
             <Ofertas /> 
+            <CardsUS />
             <Carrousel />
             <Footer/>
 
