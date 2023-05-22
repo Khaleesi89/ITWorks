@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.input-block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-block input,
+.input-block textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-block span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(225, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.input-block input:valid ~ span,
+.input-block input:focus ~ span,
+.input-block textarea:valid ~ span,
+.input-block textarea:focus ~ span{
+    color: #48EBE1;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65rem;
+    padding: 0 10px;
+    background-color: #190832;
+    border-left: 1px solid #48EBE1;
+    border-right: 1px solid #48EBE1;
+    letter-spacing: 0.2em;
+}
+
+.input-block textarea:valid ~ span,
+.input-block textarea:focus ~ span{
+    background-color: #48EBE1;
+    color: #190832;
+    border-radius: 2px;
+}
+
+.input-block input:valid,
+.input-block input:focus{
+    border: solid 1px #48EBE1;
+}
+
+.square-button {
+    background-color: rgba(255, 255, 255, 0.452);
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 0 60px;
+    height: 60px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.square-button:hover, .contact-form .square-button:focus {
+    background-color: #9071c9a2;
+}
+
+@media (min-width: 768px) {
+    .contact-wrap {
+    width: 60%;
+    margin: auto;
+    }
+}
+
+.Contact h1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.082);
+    color: white;
+    padding: 40px;
+    margin: 0 0 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.Contact h1 small {
+    font-size: 18px;
+    display: block;
+    text-transform: none;
+    font-weight: 300;
+    margin-top: 10px;
+}
