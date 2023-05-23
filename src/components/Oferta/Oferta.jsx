@@ -45,7 +45,7 @@ export const Oferta = props =>{
                                 <p>{props.text5}</p>
                             </li>
                         </ul>
-                        <button type="button" className="btn btn-dark">{props.precio}</button>
+                        <button type="button" className="btn btn-dark">${props.precio}</button>
                         <button onClick = {() => comprarOferta(props)} id={`servicio-${props.id}`} type="button" className="btn btn-dark">Contratar</button>
 
                 </div>
