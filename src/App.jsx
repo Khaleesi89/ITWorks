@@ -6,11 +6,14 @@ import {Cards} from './components/Cards/Cards';
 import Ofertas from './components/Ofertas/Ofertas';
 import Carrousel from './components/Carrousel/Carrousel';
 import Footer from '../src/components/Footer/Footer';
+import CartItem from '../src/components/CartItem/CartItem'
 
 
 function App() {
   
     return(
+        
+        
         <div>
             
             <Promotions/>
@@ -20,8 +23,11 @@ function App() {
             <Ofertas /> 
             <Carrousel />
             <Footer/>
+            <CartItem/>
 
-        </div>
+            </div>
+            
+            
     )
 
 }
