@@ -3,7 +3,7 @@ import Modal_card from './Modal_card';
 import './Modal_card.css';
 import './Modal_container.css'
 
-export const Modal_container = () => {
+const Modal_container = () => {
 
     const cards = [
 

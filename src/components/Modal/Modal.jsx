@@ -1,8 +1,8 @@
 
 import Modal_container from './Modal_container';
+import Modal_card from './Modal_card';
 
-
-export const Modal = () => {
+const Modal = () => {
 
     return(
        <div>
@@ -11,3 +11,4 @@ export const Modal = () => {
     );
 }
 
+export default Modal;

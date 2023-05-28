@@ -36,6 +36,19 @@
     margin-left: 60px;
 }
 
+
+
+/* menu desplegabla */
+
+.dropdown-menu{
+    background-color: var(--colorNav);
+    
+}
+
+.dropdown-menu>.dropdown-item{
+    color: var(--bs-navbar-brand-color);
+    font-family: 'Montserrat', sans-serif;
+}
 /* icons */
 
 .iconos>i{
@@ -44,19 +57,6 @@
     border: 1px solid #28F0E2;
     padding: 10px;
     border-radius: 50px;
-}
-
-.carritoIcono>i{
-    margin-right: 50px;
-    font-size:25px;
-    border: 1px solid #28F0E2;
-    padding: 10px;
-    border-radius: 50px;
-}
-
-.carritoIcono>i:hover{
-    color: var(--color-hover);
-    filter: drop-shadow(0px 3px 3px );
 }
 
 .iconos>i:hover{
@@ -146,5 +146,114 @@
     color:#28F0E2;
     outline: 0;
     
+}
+
+/*media query del home*/
+
+@media only screen and (max-width: 1024px) {
+    
+    .home-container {
+      height: 50vh;
+    }
+    
+    .slogan {
+      font-size: 1.5em;
+      grid-template-columns: 60px 60px;
+      gap: 100px;
+    
+    }
+    
+    .btn {
+      font-size: 0.8em;
+      grid-template-columns: 60px 60px;
+      gap: 100px;
+    
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    .home-container {
+      height: 50vh;
+      
+    }
+    
+    .slogan {
+      font-size: 1em;
+      margin-right: 50px;
+      grid-template-columns: 100px 100px;
+      gap: 50px;
+    
+    }
+    
+    .btn {
+      font-size: 0.6em;
+      grid-template-columns: 100px 100px;
+      gap: 50px;
+    
+      
+    }
+  }
+ 
+  
+ @media screen and (max-width: 768px) {
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .container-fluid{
+        display: flex;
+        
+    }
+
+    .navbar-nav>li>a:hover{        
+        background-color: transparent;
+        transform: scale(1);
+        transition: 0.2s all ease-in-out;
+        filter: drop-shadow(25px 14px 24px var(--colorLetras));
+        -webkit-filter: drop-shadow(15px 9px 14px var(--colorLetras));
+        -moz-filter: drop-shadow(15px 9px 14px var(--colorLetras));    
+    
+    }
+
+    .collapse{
+        margin: 0px;
+        
+    }
+    .navbar>.container-fluid>.iconos{
+        
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .logo{
+        display: none;        
+    }
+
+    .navbar-brand{
+        margin: auto;
+        margin-bottom: 40px;
+       
+    }
+
+    .navbar-nav{
+        margin-bottom: 40px;
+       
+    }
+
+    .navbar-nav>li>a{
+        margin-left: 0px;
+    }
+
+
+    .iconos>i:hover{
+        color: var(--color-hover);
+        filter: drop-shadow(0px 3px 3px );
+    }
 }
 

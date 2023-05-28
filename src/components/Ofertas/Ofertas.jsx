@@ -1,16 +1,11 @@
 
 import './Ofertas.css';
-//import { useEffect,useState, } from 'react';
-import { useContext } from 'react';
-import { dataContext } from '../Context/DataContext';
-//import axios from 'axios'; 
+import { useEffect,useState } from 'react';
+import axios from 'axios'; 
 import { Oferta } from '../Oferta/Oferta';
 
 const Ofertas = () => {
-
-    const {data} = useContext(dataContext);
-    
-    /* const [data, setData] = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(()=>{
         axios.get('http://localhost:3001/ofertas')
@@ -24,8 +19,8 @@ const Ofertas = () => {
         console.log(error);
         });
         
-    },[] ); */
-    //console.log(data)
+    },[] );
+    
     const Ofertastotales = data.map((oferta) => <Oferta key={oferta.id} {...oferta} />)
 
 

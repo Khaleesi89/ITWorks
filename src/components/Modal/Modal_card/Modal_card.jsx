@@ -1,5 +1,5 @@
 
-export const Modal_card = () => {
+const Modal_card = () => {
 
     return(
        <figcaption className='card_container'>
@@ -13,3 +13,4 @@ export const Modal_card = () => {
     );
 }
 
+export default Modal_card;
