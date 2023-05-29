@@ -1,7 +1,9 @@
 export const Button = () => {
     return (
-        <div className="btn serviceBoton">Nuestros Servicios</div>
-        
+        <div className=" serviceBoton">
+        <a href="#">  Nuestros Servicios</a>
+          </div>
+      
     )
 }
 export default Button;

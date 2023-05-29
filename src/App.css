@@ -92,16 +92,17 @@
 
 .home-container{
     background-image: url(./img/fondo.jpg);
-    background-size: cover;
+    background-size:cover;
     background-position: center center;
     height: 100vh;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
     text-align:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100%;
     
     
 }
@@ -110,28 +111,76 @@
     font-family: 'Montserrat', sans-serif;
     color:#28F0E2;
     position: absolute;
-    width: 550px;
-    top: 550px;
-    left: 230px;
+    width: 34.375rem;
+    top: 21.875rem;
+    left: 14.375rem;
 }
 
 .serviceBoton{
     position: absolute;
-    top: 650px;
-    left: 380px;
-}
-.btn{
+    top: 37.5rem;
+    left: 26rem;
     font-size: 1em;
     padding: 1rem 1rem;
-    margin-right: 650px;
+    margin-right: 40rem;
     background-color:#6F42C1;
-    border-radius: 30px;
-    color: #fff;
+    border-radius: 1.9rem;
     
 }
-.btn:hover, .btn:focus{
-    color:#28F0E2;
+
+    
+    
+
+.serviceBoton:hover, .serviceBoton:focus{
+    background-color:#1A0934;
     outline: 0;
     
 }
 
+
+    
+        
+    
+        /*Media query*/ 
+
+
+
+@media screen and (max-width: 767px){
+    .slogan{
+        font-size: 1em;
+        width:36% ;
+        flex-wrap: wrap;
+        background-size: contain;
+    
+    }
+    .serviceBoton{
+       margin-right: 30rem;
+       top: 42rem;
+       left: 20rem;
+       font-size: medium;
+    }
+    
+    
+}
+@media screen and (max-width: 600px){
+.serviceBoton{
+    
+    left: 10rem;
+    top:48rem;
+    font-size:small;
+}
+.slogan{
+    left:8rem;
+    font-size: small;
+
+}
+}
+    
+        
+    
+
+
+    
+
+
+    
