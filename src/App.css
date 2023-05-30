@@ -36,6 +36,16 @@
     margin-left: 60px;
 }
 
+.dropdown-menu{
+    color: var(--bs-navbar-brand-color);
+    background-color: var(--colorNav);
+    margin-left: 3em;
+
+}
+
+.dropdown-menu>a{
+    color: var(--bs-navbar-brand-color);
+}
 /* icons */
 
 .iconos>i{
@@ -141,11 +151,14 @@
     
         
     
-        /*Media query*/ 
+         /*Media query del home*/ 
 
 
 
 @media screen and (max-width: 767px){
+    .navbar{
+        z-index: 4;
+    }
     .slogan{
         font-size: 1em;
         width:36% ;
@@ -163,6 +176,9 @@
     
 }
 @media screen and (max-width: 600px){
+    .navbar{
+        z-index: 4;
+    }
 .serviceBoton{
     
     left: 10rem;
@@ -174,7 +190,7 @@
     font-size: small;
 
 }
-}
+} 
     
 /***************MEDIA QUERIES DE LA NAVBAR *******************/
 
@@ -189,6 +205,13 @@
         font-weight: bolder;
         letter-spacing:1px;
       
+    }
+}
+
+@media screen and (max-width: 1429px) {
+    .container-fluid>.iconos>i{
+        margin: 7px;
+        
     }
 }
 
@@ -259,7 +282,9 @@
   @media screen and (max-width: 991px) { /* aca tengo problema cn lo responsive- 
     q hace un espacio en el lado derecho q 
     no se porq se hace */
-
+    .navbar{
+        z-index: 4;
+    }
     
     .container-fluid{
         display: flex;
@@ -315,7 +340,13 @@
 
   @media screen and (max-width: 700px) {   /* @media screen and (max-width: 768px) */
   
+    .encabezado{
+        display: none;
+    }
   
+    .navbar{
+        z-index: 4;
+    }
     
     .navbar-brand{
         
@@ -390,6 +421,10 @@
 
   @media screen and (max-width: 575px) {
 
+    .navbar{
+        z-index: 4;
+    }
+
     .dropdown-menu{
         margin-left: 1em;
     }
@@ -403,6 +438,10 @@
         margin-left: 5em;
         
       } 
+
+    .encabezado{
+        display: none;
+    }
 
       /* .home-container{
         width: 100%;
@@ -426,6 +465,9 @@
 @media screen and (max-width: 480px) {
 
 
+    .navbar{
+        z-index: 4;
+    }
     .dropdown-menu{
         margin-left: 1em;
     }
