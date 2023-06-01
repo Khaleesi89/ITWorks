@@ -50,7 +50,7 @@ const CardsUS = () => {
   return (
     <>
     <h2>Sobre nosotros</h2>
-    <div className='container d-flex justify-content-center h-100 align-items-center'>
+    <div className='container d-flex justify-content-center'>
         <div className="row">
             {
                 cards.map(card => (
