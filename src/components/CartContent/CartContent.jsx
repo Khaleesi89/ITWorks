@@ -21,6 +21,7 @@ export const CartContent = () =>{
     const finalizacion = ()=>{
         console.log(' finalizacion');
         swal('GRACIAS POR SU COMPRA', '', 'success');
+        setCart([]);
             
             
     }
