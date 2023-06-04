@@ -1,12 +1,14 @@
-
+import {Link} from 'react-router-dom'
 export const Categories = () => {
     return(
         <>
             <ul className="navbar-nav me-auto">
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Home
+                    <Link to={('/')}>Home
+                        <span className="visually-hidden">(current)</span></Link>
+                    {/* <a to={('/') className="nav-link" href="#">Home
                         <span className="visually-hidden">(current)</span>
-                    </a>
+                    </a> */}
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">Sobre Nosotros</a>

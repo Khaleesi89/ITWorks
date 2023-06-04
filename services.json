@@ -39,7 +39,9 @@
             "text3":"Prototipos y diseños graficos",
             "text4":"Trayectoria del usuario",
             "text5":"Revisión y comentarios",
-            "precio":"$15.000"
+            "precio":15000,
+            "cantidad":1
+
     
         },
         { 
@@ -50,7 +52,8 @@
             "text3":"Diseño Adaptable",
             "text4":"Formularios especiales",
             "text5":"Botón de Whatsapp",
-            "precio":"$25.000"
+            "precio":25000,
+            "cantidad":1
         },
         { 
             "id": 3, 
@@ -60,7 +63,8 @@
             "text3":"Formato final en png - jpg",
             "text4":"Formato Vector",
             "text5":"Banners para sitio web",
-            "precio":"$12.000"
+            "precio":12000,
+            "cantidad":1
         },
         { 
             "id": 4, 
@@ -70,7 +74,8 @@
             "text3":"Diseño de 2 posteos semanales",
             "text4":"Diseño de historias destacadas",
             "text5":"Diseño de 2 historias semanales",
-            "precio":"$22.500"
+            "precio":22500,
+            "cantidad":1
         }
           
         ]

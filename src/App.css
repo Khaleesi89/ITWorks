@@ -5,6 +5,7 @@
 }
 
 
+
 /* variables */
 
 :root{
@@ -14,6 +15,7 @@
     --bs-navbar-brand-color: #fff;
     --color-hover: #fff;
 }
+
 
 /* promotions */
 
@@ -32,6 +34,9 @@
 }
 
 /* navbar */
+
+
+
 .collapse{
     margin-left: 60px;
 }
@@ -57,6 +62,20 @@
 }
 
 .iconos>i:hover{
+    color: var(--color-hover);
+    filter: drop-shadow(0px 3px 3px );
+}
+
+
+.carritoIcono>i{
+    margin-right: 50px;
+    font-size:25px;
+    border: 1px solid #28F0E2;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.carritoIcono>i:hover{
     color: var(--color-hover);
     filter: drop-shadow(0px 3px 3px );
 }
@@ -148,12 +167,64 @@
 }
 
 
+/* Cards de ofertas */
     
-        
+ .cardOfertas{
+    padding: 1rem 1rem;
+    background-color: #6F42C1;
+    border-radius: 30px;
+    color: #fff;
+ }    
+
+
+ /* CARRITO */
+
+ .total{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+ }
+
+.prducto{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.articulosCarrito{
+    margin-bottom: 70px;
     
+
+}
          /*Media query del home*/ 
 
+.contador{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
 
+.restar, .sumar{
+    background-color: #6F42C1;
+    border-radius: 20px;
+    
+}
+
+.finalizarCarrito{
+    text-align: center;
+}
+.btnFinalizar{
+    
+    background-color: #6F42C1;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.btnFinalizar:hover{
+    background-color: #28F0E2;
+    color: #1A0934;
+    font-weight: bolder;
+}
 
 @media screen and (max-width: 767px){
     .navbar{
@@ -174,7 +245,7 @@
     }
     
     
-}
+} 
 @media screen and (max-width: 600px){
     .navbar{
         z-index: 4;
@@ -190,7 +261,7 @@
     font-size: small;
 
 }
-} 
+}  
     
 /***************MEDIA QUERIES DE LA NAVBAR *******************/
 
@@ -236,13 +307,13 @@
     
 }
 
-  @media screen and (max-width: 1190px) {
+  @media screen and (max-width: 1235px) {/* max-width: 1190px */
     .navbar>.container-fluid{
         display: flex;
     }
     .navbar>.container-fluid>.iconos>i{
         
-        display: flex;
+        /* display: flex; */
         margin-top: 5px;
         
     }
@@ -277,14 +348,43 @@
       } */
   }
 
+  @media screen and (max-width: 1149px) {
+    .navbar>.container-fluid>.iconos>i, .carritoIcono{
+        
+        display: flex;
+        
+    }
+    .container-fluid>.iconos>i {
+        margin-right: 49px;
+        
+    }
 
+    
+   
+  }
 
-  @media screen and (max-width: 991px) { /* aca tengo problema cn lo responsive- 
+    @media screen and (max-width: 1058px) { 
+        .container-fluid>.iconos>i {
+            margin-right: 59px;
+            margin-left: 20px;
+            
+        }
+
+        .carritoIcono>i>span{
+            font-size: 15px;
+        }
+
+        
+    }
+
+  @media screen and (max-width: 991px) { /* 991px *//* aca tengo problema cn lo responsive- 
     q hace un espacio en el lado derecho q 
     no se porq se hace */
     .navbar{
         z-index: 4;
+        
     }
+    
     
     .container-fluid{
         display: flex;
@@ -304,6 +404,8 @@
         top: 1em;
        
     }
+
+    
 
     
 
@@ -327,10 +429,15 @@
     }
 
     .dropdown-menu{
-        margin-left: 0em;
+        margin-left: 1em;
+        
     }
-
-    
+ 
+    .titulo{
+        
+        margin-bottom: 40px;
+        
+      } 
 
       
 
@@ -358,6 +465,7 @@
   
     .titulo{
       margin-left: 10em;
+      margin-bottom: 40px;
       
     } 
     
@@ -380,10 +488,6 @@
        margin-bottom: 1.2em;
     }
     
-    .collapse{
-        margin: 0px;
-        
-    }
     
     
     .navbar-nav>li>a:hover{
@@ -394,9 +498,13 @@
         -webkit-filter: drop-shadow(15px 9px 14px var(--colorLetras));
         -moz-filter: drop-shadow(15px 9px 14px var(--colorLetras));    
     }
-  
+    
     .dropdown-menu{
         margin-left: 1em;
+    }
+    .collapse{
+        margin: 0px;
+        
     }
 
     /* .home-container{
