@@ -4,11 +4,10 @@ export const Categories = () => {
         <>
             <ul className="navbar-nav me-auto">
                 <li className="nav-item">
-                    <Link to={('/')}>Home
-                        <span className="visually-hidden">(current)</span></Link>
-                    {/* <a to={('/') className="nav-link" href="#">Home
+                  {/*   <Link className="nav-item homecito" to={('/')}>Home</Link> */}
+                    <a className="nav-link" href="#">Home
                         <span className="visually-hidden">(current)</span>
-                    </a> */}
+                    </a> 
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">Sobre Nosotros</a>

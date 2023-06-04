@@ -5,12 +5,18 @@ import { dataContext } from '../Context/DataContext';
 import { CartItemCounter } from '../CartItemCounter/CartItemCounter';
 
 export const CartElements = () =>{
-    const {cart} = useContext(dataContext);
+    
+    const {cart, setCart} = useContext(dataContext);
     console.log('esty en cartelements');
     
+    const eliminarItem = (prod) =>{
+        console.log("estoy por eliminar un item");
+        console.log(prod);
+        const nuevoCarrito = cart.filter((item) => item.id !== prod.id)
+        setCart(nuevoCarrito);
+    }
 
-
-
+    
 
     return cart.map((prod) => {
         return(
@@ -24,7 +30,7 @@ export const CartElements = () =>{
             <div className='contador'>
                 <CartItemCounter key={prod.id} oferta={prod} cantidad={prod.cantidad}/>
             </div>
-            <div className='vaciarCarrito'><i class="bi bi-trash3-fill"></i></div>
+            <div onClick={()=>eliminarItem(prod)} id={prod.id} className='vaciarCarrito'><i className="bi bi-trash3-fill"></i></div>
 
         </div>
         )

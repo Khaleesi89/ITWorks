@@ -5,11 +5,25 @@ import Footer from "../Footer/Footer"
 import { CartTotal } from "./CartTotal"
 import { dataContext } from "../Context/DataContext"
 import { useContext } from "react"
+import swal from 'sweetalert';
+
+
 
 
 export const CartContent = () =>{
-    const {cart} = useContext(dataContext)
+    const {cart,setCart} = useContext(dataContext)
 
+    const vaciarCarrito = ()=>{
+        console.log(' vaciar carrito');
+        setCart([]);
+    }
+
+    const finalizacion = ()=>{
+        console.log(' finalizacion');
+        swal('GRACIAS POR SU COMPRA', '', 'success');
+            
+            
+    }
 
     return cart.length > 0 ?(
 
@@ -25,7 +39,8 @@ export const CartContent = () =>{
                     <CartTotal/>
                 </div>
                 <div className="finalizarCarrito">
-                    <button className="btnFinalizar">Finalizar Compra!</button>
+                    <button onClick= {finalizacion} className="btnFinalizar">Finalizar Compra!</button>
+                    <button className="btnFinalizar" onClick={vaciarCarrito}>Vaciar Carrito</button>
                 </div>
             </div>
         </div>
