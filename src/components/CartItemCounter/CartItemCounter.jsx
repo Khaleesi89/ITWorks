@@ -16,7 +16,10 @@ export const CartItemCounter = ({cantidad}) =>{
     }
     const disminuir = () =>{
         console.log('disminuir');
-        setCount(count - 1)
+        if(count > 1){
+            setCount(count - 1)
+        }
+        
     }
 
     return(
