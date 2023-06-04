@@ -4,8 +4,8 @@ export const CartItemCounter = ({cantidad}) =>{
     
     const Inicial = cantidad
 
-    //const [count, setCount] = useState(Inicial)
-    const {count, setCount} = useContext(dataContext);
+    const [count, setCount] = useState(Inicial)
+    //const {count, setCount} = useContext(dataContext);
 
     const aumentar = () =>{
         console.log('aumentar');

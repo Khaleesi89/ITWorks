@@ -193,6 +193,8 @@
     align-items: center;
 }
 
+
+
 .articulosCarrito{
     margin-bottom: 70px;
     
@@ -594,6 +596,29 @@
         
          
       }
+
+
+    .productotitulo>p, .productoprecio>p{
+        font-size: small;
+    }
+
+
+    .contador>p{
+        font-size: small;
+    }
+
+    .restar,.sumar{
+        padding: 9px;
+        
+    }
+
+    .total{
+        font-size: 20px ;
+    }
+
+    .btnFinalizar{
+        padding: 12px;
+    }
     /* 
       .home-container{
         width: 100%;
