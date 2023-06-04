@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Diseño UX/UI - Plan Inicial ",
+      "price": "15000"
+      
+    },
+    {
+      "id": 2,
+      "name": "Desarrollo Web - Plan Especial",
+      "price":"25000"
+      
+    },
+    {
+      "id": 3,
+      "name": "D. Grafico - Plan Logo +Banners ",
+      "price": "12000"
+      
+    },
+    {
+      "id": 4,
+      "name": "Community Manager - Plan Inicial ",
+      "price": "22500"
+      
+    }
+  ]

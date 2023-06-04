@@ -1,37 +1,42 @@
-import './App.css'
-import { Navbar } from './components/Navbar/Navbar';
-import { Promotions } from './components/Promotions/Promotions';
+import './App.css';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import {ShoppingCart} from './components/ShoppingCart/ShoppingCart';
+import {ShoppingCartProvider} from './components/Contexts/ShoppingCartContext';
+import {ItemList} from './components/ShoppingCart/ItemList';
+import { Shopping } from './components/ShoppingCart/Shopping';
 import {Home} from './components/Home/Home';
-import {Cards} from './components/Cards/Cards';
-import Ofertas from './components/Ofertas/Ofertas';
-import Carrousel from './components/Carrousel/Carrousel';
-import Footer from '../src/components/Footer/Footer';
-import CartItem from '../src/components/CartItem/CartItem'
+
+
+
+
+
+
+
 
 
 function App() {
-  
+
     return(
+            <ShoppingCartProvider>
         
-        
-        <div>
-            
-            <Promotions/>
-            <Navbar />
-            <Home/>
-            <Cards />
-            <Ofertas /> 
-            <Carrousel />
-            <Footer/>
-            <CartItem/>
+            <Router>
+                <Home/>
+                <ShoppingCart/>
+                <Routes>
 
-            </div>
-            
-            
-    )
+                    <Route path='/' element ={<ItemList/>}></Route>
+                    
+                    <Route path='/cart' element = {<Shopping/>}></Route>
+                </Routes>
 
-}
+                </Router>
+
+                </ShoppingCartProvider>)
+
+
+
+
+    }
 
 export default App;
-
 
