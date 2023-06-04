@@ -1,21 +1,22 @@
 import { useContext, useState } from 'react';
 import { dataContext } from '../Context/DataContext';
-export const CartItemCounter = ({oferta,cantidad}) =>{
+export const CartItemCounter = ({cantidad}) =>{
     
     const Inicial = cantidad
 
-    const [count, setCantidad] = useState(Inicial)
+    //const [count, setCount] = useState(Inicial)
+    const {count, setCount} = useContext(dataContext);
 
     const aumentar = () =>{
         console.log('aumentar');
-        setCantidad(count + 1)
+        setCount(count + 1)
         
         
 
     }
     const disminuir = () =>{
         console.log('disminuir');
-        setCantidad(count - 1)
+        setCount(count - 1)
     }
 
     return(
