@@ -105,26 +105,32 @@
     width: 100%;
     
     
+    
+    
 }
 .slogan{
-    font-size: 2em;
+   font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     color:#28F0E2;
     position: absolute;
     width: 34.375rem;
     top: 21.875rem;
     left: 14.375rem;
+   
 }
 
 .serviceBoton{
-    position: absolute;
+    background-color:#6F42C1;
+   position: absolute;
     top: 37.5rem;
     left: 26rem;
     font-size: 1em;
     padding: 1rem 1rem;
     margin-right: 40rem;
-    background-color:#6F42C1;
+    
     border-radius: 1.9rem;
+
+        
     
 }
 
@@ -141,46 +147,84 @@
     
         
     
-        /*Media query*/ 
+        /*Media query del home*/ 
+        @media screen and (max-width: 978px){
+           .slogan{ width: 36%;
+        }
+        .serviceBoton{
+            left:22rem;
+        }
+        }
+        @media screen and (max-width:816px) {
+            .serviceBoton{
+                left:20rem;
+            }
+            .slogan{
+                text-align:center;
+            }
+        }
 
 
 
-@media screen and (max-width: 767px){
+
+    @media screen and (max-width: 767px) { 
     .slogan{
+     
         font-size: 1em;
         width:36% ;
         flex-wrap: wrap;
         background-size: contain;
+
     
     }
     .serviceBoton{
+     
        margin-right: 30rem;
-       top: 42rem;
-       left: 20rem;
+       top: 38rem;
+       left: 19rem;
        font-size: medium;
+
     }
     
     
 }
-@media screen and (max-width: 600px){
-.serviceBoton{
+   
+
+@media screen and (max-width: 614px){
+        .serviceBoton{
     
     left: 10rem;
-    top:48rem;
+    top:40rem;
     font-size:small;
-}
-.slogan{
-    left:8rem;
+   
+                        }
+    .slogan{
+    left:7rem;
     font-size: small;
+    text-align:center;
+    top:26rem;
+    }
+}
+@media screen and (max-width: 536px){
+    .serviceBoton{
+        top:45rem;
+    }
+    
+}
+@media screen and (max-width:380px){
+    .serviceBoton{
+        left:8.5rem;
+        
+    }
+}
+    
 
-}
-}
+@media  screen and (max-width:370px) {
+    .serviceBoton{
+        left:8rem;
+        top:45rem;
     
         
+    }
     
-
-
-    
-
-
-    
+}
