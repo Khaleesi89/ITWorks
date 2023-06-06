@@ -13,6 +13,7 @@ import Footer from "../Footer/Footer"
 
 
 
+
 export const Home = () => {
     return (
         <>
@@ -28,6 +29,7 @@ export const Home = () => {
             <Contact />
             <Carrousel />
             <Footer/>
+            
         </>
         
     )

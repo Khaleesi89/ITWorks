@@ -5,6 +5,7 @@
 }
 
 
+
 /* variables */
 
 :root{
@@ -14,6 +15,7 @@
     --bs-navbar-brand-color: #fff;
     --color-hover: #fff;
 }
+
 
 /* promotions */
 
@@ -32,10 +34,23 @@
 }
 
 /* navbar */
+
+
+
 .collapse{
     margin-left: 60px;
 }
 
+.dropdown-menu{
+    color: var(--bs-navbar-brand-color);
+    background-color: var(--colorNav);
+    margin-left: 3em;
+
+}
+
+.dropdown-menu>a{
+    color: var(--bs-navbar-brand-color);
+}
 /* icons */
 
 .iconos>i{
@@ -47,6 +62,20 @@
 }
 
 .iconos>i:hover{
+    color: var(--color-hover);
+    filter: drop-shadow(0px 3px 3px );
+}
+
+
+.carritoIcono>i{
+    margin-right: 50px;
+    font-size:25px;
+    border: 1px solid #28F0E2;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.carritoIcono>i:hover{
     color: var(--color-hover);
     filter: drop-shadow(0px 3px 3px );
 }
@@ -88,20 +117,23 @@
     
 }
 
+
+
 /* home */
 
 .home-container{
     background-image: url(./img/fondo.jpg);
-    background-size: cover;
+    background-size:cover;
     background-position: center center;
     height: 100vh;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
     text-align:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100%;
     
     
 }
@@ -110,28 +142,505 @@
     font-family: 'Montserrat', sans-serif;
     color:#28F0E2;
     position: absolute;
-    width: 550px;
-    top: 550px;
-    left: 230px;
+    width: 34.375rem;
+    top: 21.875rem;
+    left: 14.375rem;
 }
 
 .serviceBoton{
     position: absolute;
-    top: 650px;
-    left: 380px;
-}
-.btn{
+    top: 37.5rem;
+    left: 26rem;
     font-size: 1em;
     padding: 1rem 1rem;
-    margin-right: 650px;
+    margin-right: 40rem;
     background-color:#6F42C1;
-    border-radius: 30px;
-    color: #fff;
+    border-radius: 1.9rem;
     
 }
-.btn:hover, .btn:focus{
-    color:#28F0E2;
+
+    
+    
+
+.serviceBoton:hover, .serviceBoton:focus{
+    background-color:#1A0934;
     outline: 0;
     
 }
 
+
+/* Cards de ofertas */
+    
+ .cardOfertas{
+    padding: 1rem 1rem;
+    background-color: #6F42C1;
+    border-radius: 30px;
+    color: #fff;
+ }    
+
+
+ /* CARRITO */
+
+ .total{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+ }
+
+.producto{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
+.articulosCarrito{
+    margin-bottom: 70px;
+    
+
+}
+         /*Media query del home*/ 
+
+.contador{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.restar, .sumar{
+    background-color: #6F42C1;
+    border-radius: 20px;
+    
+}
+
+.finalizarCarrito{
+    text-align: center;
+}
+.btnFinalizar{
+    
+    background-color: #6F42C1;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.btnFinalizar:hover{
+    background-color: #28F0E2;
+    color: #1A0934;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 767px){
+    .navbar{
+        z-index: 4;
+    }
+    .slogan{
+        font-size: 1em;
+        width:36% ;
+        flex-wrap: wrap;
+        background-size: contain;
+    
+    }
+    .serviceBoton{
+       margin-right: 30rem;
+       top: 42rem;
+       left: 20rem;
+       font-size: medium;
+    }
+    
+    
+} 
+@media screen and (max-width: 600px){
+    .navbar{
+        z-index: 4;
+    }
+.serviceBoton{
+    
+    left: 10rem;
+    top:48rem;
+    font-size:small;
+}
+.slogan{
+    left:8rem;
+    font-size: small;
+
+}
+}  
+    
+/***************MEDIA QUERIES DE LA NAVBAR *******************/
+
+
+
+@media screen and (max-width: 1532px) {
+
+    .navbar-nav>li>a{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: var(--colorLetras);
+        font-weight: bolder;
+        letter-spacing:1px;
+      
+    }
+}
+
+@media screen and (max-width: 1429px) {
+    .container-fluid>.iconos>i{
+        margin: 7px;
+        
+    }
+}
+
+@media screen and (max-width: 1378px) {
+
+    .navbar-nav>li>a{
+        margin-left: 2em;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: var(--colorLetras);
+        font-weight: bolder;
+        letter-spacing:1px;
+      
+    }
+
+    .dropdown-menu{
+        background-color: var(--colorNav); 
+        margin-left: 2em;
+        
+    }
+
+    
+}
+
+  @media screen and (max-width: 1235px) {/* max-width: 1190px */
+    .navbar>.container-fluid{
+        display: flex;
+    }
+    .navbar>.container-fluid>.iconos>i{
+        
+        /* display: flex; */
+        margin-top: 5px;
+        
+    }
+    .logo{
+        display: none; 
+    }
+  
+    .navbar-brand {
+        margin-left: 2em;
+    }
+
+    .dropdown-menu{
+        background-color: var(--colorNav); 
+        margin-left: 2em;
+        
+    }
+
+    /* .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
+  }
+
+  @media screen and (max-width: 1149px) {
+    .navbar>.container-fluid>.iconos>i, .carritoIcono{
+        
+        display: flex;
+        
+    }
+    .container-fluid>.iconos>i {
+        margin-right: 49px;
+        
+    }
+
+    
+   
+  }
+
+    @media screen and (max-width: 1058px) { 
+        .container-fluid>.iconos>i {
+            margin-right: 59px;
+            margin-left: 20px;
+            
+        }
+
+        .carritoIcono>i>span{
+            font-size: 15px;
+        }
+
+        
+    }
+
+  @media screen and (max-width: 991px) { /* 991px *//* aca tengo problema cn lo responsive- 
+    q hace un espacio en el lado derecho q 
+    no se porq se hace */
+    .navbar{
+        z-index: 4;
+        
+    }
+    
+    
+    .container-fluid{
+        display: flex;
+        flex-direction:column;
+
+    }
+    
+    .navbar-brand {
+        margin: auto;
+        
+    }
+
+    .container-fluid>.navbar-toggler{
+        
+        position: absolute;
+        left: 80%;
+        top: 1em;
+       
+    }
+
+    
+
+    
+
+    .container-fluid>.iconos{
+       
+        margin-top:40px;
+        margin-bottom: 20px;
+        display: flex;
+        
+        
+        
+    }
+
+    .container-fluid>.iconos>i{
+        margin-left: 15px;
+        
+    }
+    .collapse{
+        margin-left: 0px;
+        
+    }
+
+    .dropdown-menu{
+        margin-left: 1em;
+        
+    }
+ 
+    .titulo{
+        
+        margin-bottom: 40px;
+        
+      } 
+
+      
+
+  }
+
+
+
+  @media screen and (max-width: 700px) {   /* @media screen and (max-width: 768px) */
+  
+    .encabezado{
+        display: none;
+    }
+  
+    .navbar{
+        z-index: 4;
+    }
+    
+    .navbar-brand{
+        
+        margin-right: 40% ;
+        
+    }      
+        
+  
+  
+    .titulo{
+      margin-left: 10em;
+      margin-bottom: 40px;
+      
+    } 
+    
+    .logo{
+          display: none;        
+    }
+
+    .container-fluid>.navbar-toggler{
+        
+        position: absolute;
+        left: 80%;
+        top: 1em;
+       
+    }
+    
+    .navbar>.container-fluid>.iconos{
+      align-items: center;
+       margin: auto;
+       margin-top: 1em;
+       margin-bottom: 1.2em;
+    }
+    
+    
+    
+    .navbar-nav>li>a:hover{
+        background-color: transparent;
+        transform: scale(1);
+        transition: 0.2s all ease-in-out;
+        filter: drop-shadow(25px 14px 24px var(--colorLetras));
+        -webkit-filter: drop-shadow(15px 9px 14px var(--colorLetras));
+        -moz-filter: drop-shadow(15px 9px 14px var(--colorLetras));    
+    }
+    
+    .dropdown-menu{
+        margin-left: 1em;
+    }
+    .collapse{
+        margin: 0px;
+        
+    }
+
+    /* .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
+  }
+    
+
+
+
+  @media screen and (max-width: 575px) {
+
+    .navbar{
+        z-index: 4;
+    }
+
+    .dropdown-menu{
+        margin-left: 1em;
+    }
+
+    .collapse{
+        margin-left: 0px;
+        
+    }
+
+    .titulo{
+        margin-left: 5em;
+        
+      } 
+
+    .encabezado{
+        display: none;
+    }
+
+      /* .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    .navbar{
+        z-index: 4;
+    }
+    .dropdown-menu{
+        margin-left: 1em;
+    }
+
+    .collapse{
+        margin-left: 0px;
+        
+    }
+
+    .navbar>.container-fluid>.iconos{
+        margin-left: auto;
+         
+        
+         
+      }
+
+
+    .productotitulo>p, .productoprecio>p{
+        font-size: small;
+    }
+
+
+    .contador>p{
+        font-size: small;
+    }
+
+    .restar,.sumar{
+        padding: 9px;
+        
+    }
+
+    .total{
+        font-size: 20px ;
+    }
+
+    .btnFinalizar{
+        padding: 12px;
+    }
+    /* 
+      .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
+}
+      
+    
+
+
+    
+
+
+    
