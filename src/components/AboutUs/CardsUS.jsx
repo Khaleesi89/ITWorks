@@ -49,7 +49,7 @@ const cards = [
 const CardsUS = () => {
   return (
     <>
-    <h2>Sobre nosotros</h2>
+    <h2 className='h2AU'>Sobre nosotros</h2>
     <div className='container d-flex justify-content-center'>
         <div className="row">
             {

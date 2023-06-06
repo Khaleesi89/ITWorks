@@ -5,7 +5,7 @@ const CardUS = ({title, image, description}) => {
   return (
 
     <>
-      <div className='card bg-dark'>
+      <div className='card bg-dark cardAU'>
         <div className="overflow">
           <img src={image} alt="" className='card-img-top'/>
         </div>

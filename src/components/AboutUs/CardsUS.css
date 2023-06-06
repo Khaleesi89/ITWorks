@@ -29,7 +29,7 @@
     transform: scale(1.1);
 }
 
-h2 {
+.h2AU {
     color: var(--color-bg);
     text-align: center;
     padding: 20px 10px;
@@ -38,7 +38,7 @@ h2 {
     margin-bottom: 50px;
 }
 
-.card {
+.cardAU {
     margin-bottom: 20px;
     margin-left: 60px;
     background: rgb(84, 59, 134);

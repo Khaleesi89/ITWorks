@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer"
 import { CartTotal } from "./CartTotal"
 import { dataContext } from "../Context/DataContext"
 import { useContext } from "react"
-import swal from 'sweetalert';
+
 
 
 
