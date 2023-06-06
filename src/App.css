@@ -201,8 +201,6 @@
 
 }
 
-
-
 .contador{
     display: flex;
     text-align: center;
@@ -233,17 +231,19 @@
 }
 
 
-/*Media query del home*/
 
+
+
+/*Media query del home*/ 
 
 @media screen and (max-width: 978px){
     .slogan{ width: 36%;
     }
+
     .serviceBoton{
      left:22rem;
     }
 }
-
 
 @media screen and (max-width:816px) {
     .serviceBoton{
@@ -256,13 +256,10 @@
 
 
 
-
 @media screen and (max-width: 767px){
-
     .navbar{
         z-index: 4;
     }
-
     .slogan{
         font-size: 1em;
         width:36% ;
@@ -275,25 +272,28 @@
        top: 38rem;
        left: 19rem;
        font-size: medium;
-    }   
+    }
+    
     
 } 
-
-
 @media screen and (max-width: 614px){
+    .navbar{
+        z-index: 4;
+    }
     .serviceBoton{
+        
         left: 10rem;
         top:40rem;
         font-size:small;
-}
-
+    }
     .slogan{
         left:7rem;
         font-size: small;
         text-align:center;
         top:26rem;
+
     }
-}
+}  
 
 @media screen and (max-width: 536px){
     .serviceBoton{
@@ -301,6 +301,7 @@
     }
     
 }
+
 @media screen and (max-width:380px){
     .serviceBoton{
         left:8.5rem;
@@ -318,6 +319,8 @@
     }
     
 }
+
+
     
 /***************MEDIA QUERIES DE LA NAVBAR *******************/
 
@@ -387,7 +390,21 @@
         
     }
 
-    
+    /* .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
   }
 
   @media screen and (max-width: 1149px) {
@@ -548,6 +565,22 @@
         margin: 0px;
         
     }
+
+    /* .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
   }
     
 
@@ -577,6 +610,21 @@
         display: none;
     }
 
+      /* .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
 }
 
 
@@ -625,7 +673,22 @@
     .btnFinalizar{
         padding: 12px;
     }
-    
+    /* 
+      .home-container{
+        width: 100%;
+      }
+
+      .slogan{
+        width: 50%;
+        left: 100px;
+        top: 300px;
+      }
+
+      .serviceBoton{
+        
+        left: 100px;
+        top: 530px;
+      } */
 }
       
     
