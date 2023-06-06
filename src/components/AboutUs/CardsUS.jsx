@@ -54,13 +54,12 @@ const CardsUS = () => {
         <div className="row">
             {
                 cards.map(card => (
-                    <div className="col-md-4" key={card.id}>
-                        <CardUS 
-                            title={card.title}
-                            image={card.image}
-                            description={card.description}
-                        />
-                    </div>
+                    <CardUS 
+                        key={card.id}
+                        title={card.title}
+                        image={card.image}
+                        description={card.description}
+                    />
                 ))
             }
         </div>
