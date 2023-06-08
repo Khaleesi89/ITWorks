@@ -1,9 +1,10 @@
 import {BsCheckCircle} from 'react-icons/bs';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { dataContext } from '../Context/DataContext';
 export const Oferta = props =>{
 
     const {data, cart, setCart} = useContext(dataContext)
+    const[showAlert, setShowAlert] = useState(false);
 
     const comprarOferta = (producto) =>{
         console.log("dentro de comprarOferta")
@@ -15,9 +16,23 @@ export const Oferta = props =>{
         if(ofertRepetido){
             //modificamos la cantidad de ese producto
             setCart(cart.map((item)=> (item.id === producto.id ? {...producto, cantidad: ofertRepetido.cantidad + 1} : item )));
+            //mostrar mensaje emergente
+            setShowAlert(true);
+
+            //ocultando el mensaje emergente
+            setTimeout(()=>{
+                setShowAlert(false);
+            },3000);
+            
         } else {
             //carga el producto si no existe en carrito
             setCart([...cart,producto]);
+            setShowAlert(true);
+
+            //ocultando el mensaje emergente
+            setTimeout(()=>{
+                setShowAlert(false);
+            },3000);
 
         }
     }
@@ -52,6 +67,11 @@ export const Oferta = props =>{
                         </ul>
                         <button type="button" className="btn btn-dark cardOfertas">${props.precio}</button>
                         <button onClick = {() => comprarOferta(props)} id={`servicio-${props.id}`} type="button" className="btn cardOfertas btn-dark">Contratar</button>
+                        {showAlert && (
+                            <div className="alert alert-dark text-center" role="alert">
+                                Servicio agregado al carrito
+                            </div>
+                        )}
                         {/* <button id={`servicio-${props.id}`} type="button" className="btn btn-dark">Contratar</button> */}
 
                 </div>

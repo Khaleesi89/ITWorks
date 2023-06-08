@@ -3,12 +3,13 @@ export const Categories = () => {
     return(
         <>
             <ul className="navbar-nav me-auto">
-                <li className="nav-item">
-                  {/*   <Link className="nav-item homecito" to={('/')}>Home</Link> */}
+            
+                <Link className="nav-link homecito" to={('/')}>Home</Link>
+                {/*<li className="nav-item">
                     <a className="nav-link" href="#">Home
                         <span className="visually-hidden">(current)</span>
-                    </a> 
-                </li>
+                    </a>  
+                </li>*/}
                 <li className="nav-item">
                     <a className="nav-link" href="#">Sobre Nosotros</a>
                 </li>
