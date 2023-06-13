@@ -8,8 +8,10 @@
     background: var(--color-bg-primary);
     border-radius: 0 0 1rem 1rem;
     border: 1px solid var(--color-primary);
-    height: fit-content;
+    height: 550px;
     transition: var(--transition);
+    width: 350px;
+    
 }
 
 .oferta:hover {
@@ -19,14 +21,12 @@
 }
 
 
-
-
-
-
 .ofertas__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.7rem;
+    gap: 1.7rem; 
+    justify-content: center;
+    
 }
 
 
@@ -82,11 +82,22 @@ margin-top: 2px;
 
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES)==============*/
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
+    .ofertas__container {
+      display:grid;
+      grid-template-columns: auto auto;
+      grid-column:1 / span 2;
+      gap: 2rem;
+      margin-left:60px;
+      
+    }
+  
+}
+@media screen and (max-width: 768px) {
     .ofertas__container {
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 2rem; 
+          
     }
     .oferta {
         height: auto;
@@ -101,5 +112,7 @@ margin-top: 2px;
     .ofertas__container {
       grid-template-columns: 1fr;
       gap: 1.5rem;
+      margin-left: 10px;
+
     }
 }
